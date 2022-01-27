@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encrypted Messenger</title>
+    <link rel="stylesheet" href="/images/style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+          <h1 class="logo"><i class="icon-chat"></i>Encrypted<span>Messenger</span></h1>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section" id="home">
+        <div class="form box">
+          <form action="">
+            <h2 class="text">Digite sua mensagem:</h2>
+            <textarea class="text-input" cols="30" rows="10"></textarea>
+            <div class="warning">
+              <i class="icon-notification"></i>
+              <label for="input-text">Apenas letras minúsculas e sem acento</label>
+            </div>
+            <div class="buttons">
+              <input
+                class="btn"
+                type="submit"
+                value="Criptografar!"
+                id="btn-cripto"
+              />
+              <input
+                class="btn descripto"
+                type="submit"
+                value="Descriptografar!"
+                id="btn-descripto"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="msg box">
+          <h2 class="text">Mensagem criptografada:</h2>
+          <div class="img-box">
+            <textarea class="text-input" cols="30" rows="10"></textarea>
+            <div class="not-msg">
+              <img src="/images/imagem.png" alt="Sem mensagem">
+              <h3>Nenhuma mensagem encontrada</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="divider-1"></div>
+
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="text-about">
+            <h1 class="title">Sobre o projeto</h2>
+              <br/>
+            <p>
+              Este projeto faz parte da <strong>Projeto ONE</strong> desenvolvido pela <strong>Oracle Next Education</strong> e <strong>Alura</strong>.
+            </p>
+            <br />
+            <p>
+              Esse é o primeiro <strong>Challenge Oracle ONE - Iniciante em Programação</strong> que tem como objetivo o desenvolvimento de um decodificador de textos com a utilização das tecnologias <strong>HTML, CSS e Javacript</strong> além de nos fornecer conhecimentos sobre a utilização do <strong>Trello</strong> como ferramenta de acompanhamento do desenvolvimento e do <strong>Git e Github</strong> para versionamento de código.
+            </p>
+          </div>
+          <div class="image">
+            <img src="/images/ONE-logo.jpg" alt="Oracle Next Education">
+            <img src="/images/ONE-logo.png" alt="Oracle Education">
+            <img src="/images/alura-logo.png" alt="Alura">
+          </div>
+        </div>
+      </section>
+      <div class="divider-2"></div>
+    </main>
+
+    <footer class="section" id="contact">
+      <div class="container grid">
+        <div class="brand">
+          <a href="#home" class="logo"><i class="icon-chat"></i>  Encrypted<span>Messenger</span></a>
+        </div>
+        <div class="social grid">
+          <a href="mailto:dhi.carvalho85@gmail.com" target="_blank"
+            ><i class="icon-mail4"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/dhi-carvalho-dev/" target="_blank"
+            ><i class="icon-linkedin"></i
+          ></a>
+          <a href="https://github.com/Dhi-Carvalho" target="_blank"
+            ><i class="icon-github"></i
+          ></a>
+          <a href="https://www.instagram.com/dhicarvalho85/" target="_blank"
+            ><i class="icon-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="/main.js"></script>
+  </body>
+</html>
