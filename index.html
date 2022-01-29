@@ -24,38 +24,22 @@
 
     <main>
       <section class="section" id="home">
-        <div class="form box">
-          <form action="">
-            <h2 class="text">Digite sua mensagem:</h2>
-            <textarea class="text-input" cols="30" rows="10"></textarea>
-            <div class="warning">
-              <i class="icon-notification"></i>
-              <label for="input-text">Apenas letras minúsculas e sem acento</label>
-            </div>
+        <div class="fields">
+          <div class="input">
+            <h2>Digite sua mensagem:</h3>
+            <textarea id="text-input"></textarea>
+            <ul id="error"></ul>
             <div class="buttons">
-              <input
-                class="btn"
-                type="submit"
-                value="Criptografar!"
-                id="btn-cripto"
-              />
-              <input
-                class="btn descripto"
-                type="submit"
-                value="Descriptografar!"
-                id="btn-descripto"
-              />
+                <button id="btn-encrypt" class="blocked">Criptografar</button>
+                <button id="btn-decrypt" class="blocked">Descriptografar</button>
             </div>
-          </form>
-        </div>
-
-        <div class="msg box">
-          <h2 class="text">Mensagem criptografada:</h2>
-          <div class="img-box">
-            <textarea class="text-input" cols="30" rows="10"></textarea>
-            <div class="not-msg">
-              <img src="/images/imagem.png" alt="Sem mensagem">
-              <h3>Nenhuma mensagem encontrada</h3>
+          </div>
+          <div class="output">
+            <h2>Mensagem criptografada:</h2>
+            <textarea id="text-output" placeholder="Nenhuma mensagem encontrada" readonly></textarea>
+            <div class="buttons">
+                <button id="btn-copy" class="blocked">Copiar</button>
+                <button id="btn-clear" class="blocked">Limpar</button>
             </div>
           </div>
         </div>
@@ -89,6 +73,7 @@
       <div class="container grid">
         <div class="brand">
           <a href="#home" class="logo"><i class="icon-chat"></i>  Encrypted<span>Messenger</span></a>
+          <p>2022 &copy; - Desenvolvido por Dhi Carvalho</a></p>
         </div>
         <div class="social grid">
           <a href="mailto:dhi.carvalho85@gmail.com" target="_blank"
@@ -106,6 +91,9 @@
         </div>
       </div>
     </footer>
+    <div id="modal-copy" class="modal">
+      <p id="modal-copy-text"></p>
+  </div>
     <script src="/main.js"></script>
   </body>
 </html>
